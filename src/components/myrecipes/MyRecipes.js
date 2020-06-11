@@ -9,11 +9,11 @@ class MyRecipes extends React.Component {
                 
                 <section class="recipe1">
                     <h2>Pasta alla Norma</h2>
-                    <Link to="./view">
+                    <Link to="./viewrecipe">
                         <button type="button">View</button>
                     </Link>
 
-                    <Link to="./edit">
+                    <Link to="./editrecipe">
                         <button type="button">Edit</button>
                     </Link>
                     <button type="button">Delete</button>
@@ -21,11 +21,11 @@ class MyRecipes extends React.Component {
 
                 <section class="recipe2">
                     <h2>Cherry Chocolate Cake</h2>
-                    <Link to="./read">
+                    <Link to="./viewrecipe">
                         <button type="button">View</button>
                     </Link>
 
-                    <Link to="./edit">
+                    <Link to="./editrecipe">
                         <button type="button">Edit</button>
                     </Link>
                     
