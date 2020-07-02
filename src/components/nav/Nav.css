@@ -7,28 +7,34 @@
   }
 
   #navbar {
+    display: table;
     width: 100%;
     float: left;
     margin: 0;
     padding: 0;
     list-style-type: none;
-    background-color: rgb(158, 143, 105);
-    border-bottom: 1px solid rgb(0, 0, 78);
-    border-top: 1px solid rgb(0, 0, 78);
-    text-align: center;
+    background-color: rgb(88, 26, 26);
+    border-bottom: 1px solid #edf2f4;; 
+    border-top: 1px solid #edf2f4;;
+    height: 60px;
 }
 
 #navbar li {
+    display: table-cell;
     float: left;
     display: inline;
-    text-align: center;
+    font-size: 25px;
+    padding-right: 40px;
 }
 
 #navbar  a {
-    display: inline-block;
+    display: table-cell;
     padding: 8px 15px;
     text-decoration: none;
-    font-weight: bold;
-    color: rgb(0, 0, 78);
-    text-align: center;
+    color: whitesmoke;
+    vertical-align: middle;
+}
+#navbar a:hover {
+    background-color: #ddd;
+    color: black;
 }
