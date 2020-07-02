@@ -2,6 +2,10 @@ select, input, label {
     margin: 1%;
 }
 
+label {
+    font-size: 30px;
+}
+
 .postRecipeHero{
     background-image: url('./postrecipe.jpg');
     background-position: center; /* Center the image */

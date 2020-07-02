@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
 import './PostRecipe.css'
 import ApiContext from '../../ApiContext';
 import config from '../../config'
