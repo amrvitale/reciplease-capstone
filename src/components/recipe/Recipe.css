@@ -13,16 +13,22 @@ a {
     font-size: 19px;
   }
   
-  .card-summary {
-    font-size: 18px;
-  }
+ 
 
  .recipeTitle{
    color: orange;
- }
-  .card-header {
-    height: 30%;
+ 
+   display:inline-block;
+   white-space: pre-wrap;
+   width: 150px;
+   -webkit-line-clamp: 2; /* number of lines to show */
+   -webkit-box-orient: vertical;
+  }
+  
+  div.card-header {
+    height: 50%;
     color: black;
-    background: rgb(88, 26, 26);
+    
     text-align: center;
   }
+

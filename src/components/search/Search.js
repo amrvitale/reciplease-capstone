@@ -7,7 +7,7 @@ class Search extends React.Component {
 
     state = {
         recipenameValue: '',
-        ingredientsValue: "",
+        ingredientsValue: '',
         recipes: [],
         noResults: false,
     };
@@ -25,13 +25,14 @@ class Search extends React.Component {
     }
 
     makeAPICall = searchInput => {
-        let url = `${config.API_ENDPOINT}/search`;
+        let url = `${config.API_ENDPOINT}/search?`;
         let searchTerms = [];
         if (this.state.recipenameValue.length > 0) searchTerms.push(`recipename=${this.state.recipenameValue}`);
         if (this.state.ingredientsValue.length > 0) searchTerms.push(`ingredients=${this.state.ingredientsValue}`);
 
         url += searchTerms.join('&');
-
+        console.log(url)
+        
         fetch(url, {
             method: 'GET',
             headers: {
@@ -41,6 +42,7 @@ class Search extends React.Component {
 
         .then((response) => {
             if(!response.ok) {
+                console.log('inside if statement')
                 throw response.message;
             }
             console.log('the whole response', response)
@@ -48,6 +50,7 @@ class Search extends React.Component {
         })
 
         .then((responseJson)=> {
+            console.log('inside then statement before let recipe')
             let recipe = responseJson.recipes;
             console.log(recipe)
             this.setState( {recipes: recipe, noResults: recipe.length === 0,})

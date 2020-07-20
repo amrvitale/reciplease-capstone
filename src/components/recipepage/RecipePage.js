@@ -32,7 +32,7 @@ class RecipePage extends React.Component {
           status: status
         }
     
-        let url = `${config.API_ENDPOINT}/mydraftlings/${selectedRecipe.id}`; 
+        let url = `${config.API_ENDPOINT}/myrecipes/${selectedRecipe.id}`; 
     
           fetch(url, {
             method: 'PUT',
