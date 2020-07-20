@@ -1,36 +1,31 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import Recipe from '../recipe/Recipe'
+import './MyRecipes.css'
 
 class MyRecipes extends React.Component {
     render() {
+        console.log(this.props.recipes)
         return (
-            <div>
-                <h1>My Recipes</h1>
-                
-                <section class="recipe1">
-                    <h2>Pasta alla Norma</h2>
-                    <Link to="./viewrecipe">
-                        <button type="button">View</button>
-                    </Link>
-
-                    <Link to="./editrecipe">
-                        <button type="button">Edit</button>
-                    </Link>
-                    <button type="button">Delete</button>
-                </section>
-
-                <section class="recipe2">
-                    <h2>Cherry Chocolate Cake</h2>
-                    <Link to="./viewrecipe">
-                        <button type="button">View</button>
-                    </Link>
-
-                    <Link to="./editrecipe">
-                        <button type="button">Edit</button>
-                    </Link>
-                    
-                    <button type="button">Delete</button>
-                </section>
+            <div className="myRecipesPage">
+                <div className="myRecipesPageHero">
+                    <h1 className="myRecipesHeading">My Recipes</h1>
+                </div>
+                    <ul className="container">
+                        {this.props.recipes.map(recipe =>
+                                <li className="card" key={recipe.id}>
+                                    <Recipe 
+                                        id={recipe.id}
+                                        recipename={recipe.recipename}
+                                        experience={recipe.experience}
+                                        preptime={recipe.preptime}
+                                        cooktime={recipe.cooktime}
+                                        servings={recipe.servings}
+                                        ingredients={recipe.ingredients}
+                                        directions={recipe.directions}
+                                    />
+                                </li>
+                        )}
+                    </ul>
 
             </div>
         );

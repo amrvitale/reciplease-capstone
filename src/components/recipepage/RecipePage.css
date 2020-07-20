@@ -1,0 +1,11 @@
+.recipeName {
+    color: maroon;
+    font-size: 40px;
+    background-color: black;
+    text-transform: uppercase;
+}
+
+p {
+    white-space: pre-wrap;
+}
+

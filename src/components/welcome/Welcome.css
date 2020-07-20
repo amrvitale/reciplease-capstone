@@ -1,0 +1,23 @@
+.welcomeHero{
+    background-image: url(./welcomeReciplease.jpg);
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.welcomeHeader{
+    font-family: 'Amaranth', sans-serif;;
+    color: white;
+    text-shadow:
+    4px 4px 0 black,
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,
+     -1px 1px 0 #000,
+      1px 1px 0 #000;
+}
+
+.welcomeTag {
+    color: white;
+    text-shadow:
+    4px 4px 0 black;
+}

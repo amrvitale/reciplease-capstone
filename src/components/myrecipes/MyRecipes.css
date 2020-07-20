@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .card { 
+    margin: 1px;
+    padding: 5px;
+    border: 1px solid #2B2D42;
+    border-radius: 5px;
+    background-color: white;
+    justify-content: space-evenly;
+  }
+
+  .container .card {
+    padding: 3px;
+    display: flex;
+    border: 1px #2B2D42;  
+}
+
+li.card{
+    margin: 30px;
+    justify-self: center;
+    height: 150px;
+    width: 320px;
+    box-shadow: 3px 3px 5px 6px #ccc;
+}
+
+.myRecipesHeading {
+    font-family: 'Amaranth', sans-serif;;
+    color: white;
+    text-shadow:
+    4px 4px 0 black,
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,
+     -1px 1px 0 #000,
+      1px 1px 0 #000;
+}
+
+.myRecipesPageHero{
+    background-image: url(./myRecipes.jpg);
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}

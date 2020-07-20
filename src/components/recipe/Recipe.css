@@ -8,17 +8,21 @@
 a {
     text-decoration: none;
   }
+
+  .card-title {
+    font-size: 19px;
+  }
   
   .card-summary {
     font-size: 18px;
   }
-  
-  .card-meta {
-    font-size: 16px;
-  }
+
+ .recipeTitle{
+   color: orange;
+ }
   .card-header {
     height: 30%;
-    color: white;
-    background: maroon;
+    color: black;
+    background: rgb(88, 26, 26);
     text-align: center;
   }

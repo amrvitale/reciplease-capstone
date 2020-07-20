@@ -1,17 +1,15 @@
 import React from 'react';
 import { Route } from 'react-router-dom'
 import './App.css';
-import Login from './components/login/Login'
-import Signup from './components/signup/Signup';
+import Welcome from './components/welcome/Welcome';
 import PostRecipe from './components/postrecipe/PostRecipe';
 import Nav from './components/nav/Nav';
 import Kitchen from './components/kitchen/Kitchen';
 import Search from './components/search/Search'
 import MyRecipes from './components/myrecipes/MyRecipes'
 import SearchResults from './components/searchresults/SearchResults'
-import ViewRecipe from './components/viewrecipe/ViewRecipe';
-import Edit from './components/editrecipe/EditRecipe'
 import EditRecipe from './components/editrecipe/EditRecipe';
+import RecipePage from './components/recipepage/RecipePage';
 import ApiContext from './ApiContext'
 import config from './config'
 
@@ -35,7 +33,8 @@ class App extends React.Component {
         ])
     })
     .then(([recipes]) => {
-      this.setState( {recipes} )
+      console.log(recipes, "here we are!")
+      this.setState( {recipes: recipes} )
     })
     .catch(error => {
       console.log( {error} )
@@ -48,6 +47,23 @@ class App extends React.Component {
           ...this.state.recipes,
           recipe
         ]
+      })
+    }
+
+    handlePublishRecipe= (id, status) => {
+      console.log(id, status)
+      this.setState( {
+        draftlings: this.state.recipes.map((recipe) => {
+           if (parseInt(recipe.id) === parseInt(id)) {
+            console.log("SETTING NEW STATUS")
+              return {
+                ...recipe,
+                status: status
+              } 
+           } else {
+            return recipe;
+           }
+         })
       })
     }
 
@@ -69,14 +85,14 @@ class App extends React.Component {
     render() {
       const providerValue = {
         addRecipe: this.addRecipe,
+        handlePublishRecipe: this.handlePublishRecipe
       }
 
     return (
       <ApiContext.Provider value={providerValue}>
         <div className="App">
         <Nav />
-        <Route exact path = '/' component={Signup}/>
-        <Route path= '/login' component={Login} />
+        <Route exact path = '/' component={Welcome}/>
         <Route path= '/mykitchen' component={Kitchen} />
         <Route path= '/postrecipe' component={PostRecipe} />
         <Route path= '/search' component={Search} />
@@ -87,8 +103,17 @@ class App extends React.Component {
           render={(props) => <MyRecipes {...props} recipes={this.state.recipes} />} 
         />
 
-        <Route path= '/viewrecipe' component={ViewRecipe} />
-        <Route path='/editrecipe' component={EditRecipe} />
+        <Route 
+          path= '/recipe/:slug' 
+          render={(props) => <RecipePage {...props} recipes={this.state.recipes} handlePublishRecipe={this.handlePublishRecipe} />} 
+        />  
+        
+        
+        <Route 
+          path='/editrecipe/:id' 
+          render={(props) => <EditRecipe {...props} fetchRecipes={this.fetchRecipes} />}
+        />
+
         </div>
       </ApiContext.Provider>
     );
