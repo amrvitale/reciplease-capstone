@@ -54,6 +54,7 @@ class RecipePage extends React.Component {
 
     render() {
         const {recipes = [] } = this.context
+        console.log(this.context)
         const {slug} = this.props.match.params;
         console.log(slug)
         console.log(recipes)

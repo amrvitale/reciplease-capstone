@@ -86,9 +86,6 @@ class EditRecipe extends React.Component {
             textAlign: 'left'
         };
 
-        const styleTitle = {
-            minWidth: '200px'
-        }
         
         return (
             <div className="editRecipePage"> 

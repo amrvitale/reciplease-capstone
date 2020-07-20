@@ -53,7 +53,7 @@ class App extends React.Component {
     handlePublishRecipe= (id, status) => {
       console.log(id, status)
       this.setState( {
-        draftlings: this.state.recipes.map((recipe) => {
+        recipes: this.state.recipes.map((recipe) => {
            if (parseInt(recipe.id) === parseInt(id)) {
             console.log("SETTING NEW STATUS")
               return {
@@ -85,7 +85,9 @@ class App extends React.Component {
     render() {
       const providerValue = {
         addRecipe: this.addRecipe,
-        handlePublishRecipe: this.handlePublishRecipe
+        recipes: this.state.recipes,
+        handlePublishRecipe: this.handlePublishRecipe,
+        editRecipe: this.editRecipe
       }
 
     return (
