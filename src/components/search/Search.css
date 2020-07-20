@@ -2,7 +2,7 @@
     box-sizing: border-box;
   }
   
-  #draftlingSearchResultContainer {
+  #recipeSearchResultContainer {
     display: flex;
     flex-direction: row;
     flex-flow: row wrap;
@@ -39,15 +39,21 @@ div.single-recipe {
 }
 
 .searchHeading {
-    -webkit-text-fill-color: rgb(37, 26, 26);    
-    font-family: 'Playfair Display', 'Georgia', serif;
+    font-family: 'Amaranth', sans-serif;;
+    color: white;
+    text-shadow:
+    4px 4px 0 black,
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,
+     -1px 1px 0 #000,
+      1px 1px 0 #000;
  
       
 }
 
 .recipeNameSearch, .ingredientsSearch {
     font-size: 30px;
-    color: whitesmoke;
+    color: black;
 }
 
 input, select {

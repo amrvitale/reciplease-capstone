@@ -109,7 +109,7 @@ class PostRecipe extends React.Component {
                         <textarea className="directions" name="directions" onChange={this.handleChange} style={styleTextArea} placeholder="Please add each step on a separate line." required></textarea>
                     </section>
 
-                    <input type="submit" value="Post Recipe"></input>
+                    <input type="submit" className="submitBtn" value="Submit"></input>
                 </form>
             </div>
         );

@@ -8,6 +8,7 @@ class Search extends React.Component {
     state = {
         recipenameValue: '',
         ingredientsValue: "",
+        recipes: [],
         noResults: false,
     };
 

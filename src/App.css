@@ -50,16 +50,18 @@ button {
 	.tagline {
 	  font-size: 20px;
 	}
-	
+	.submitBtn {
+		width: 40%;
+	  }
   }
   
   @media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
-	.myKitchenHero, .postRecipeHero, .welcomeHero, .myRecipesPageHero, .editRecipeHero  {
+	.myKitchenHero, .postRecipeHero, .welcomeHero, .myRecipesPageHero, .editRecipeHero, .searchPageHero  {
 	  min-width: 481px;
 	  max-width: 768px;
 	  min-height: 350px;
 	}
-	.myKitchenHeader, .postHeading, .welcomeHeader, .myRecipesHeading, .editHeading {
+	.myKitchenHeader, .postHeading, .welcomeHeader, .myRecipesHeading, .editHeading, .searchHeading {
 	  font-size: 60px;
 	}
 	.tagline {
@@ -68,12 +70,12 @@ button {
   }
   
   @media only screen and (min-device-width: 769px) and (max-device-width: 1366px)  {  
-	.myKitchenHero, .postRecipeHero, .welcomeHero, .myRecipesPageHero, .editRecipeHero  {
+	.myKitchenHero, .postRecipeHero, .welcomeHero, .myRecipesPageHero, .editRecipeHero, .searchPageHero  {
 	  min-width: 769px;
 	  max-width: 1366px;
 	  min-height: 400px;
 	}
-	.myKitchenHeader, .postHeading, .welcomeHeader, .myRecipesHeading, .editHeading {
+	.myKitchenHeader, .postHeading, .welcomeHeader, .myRecipesHeading, .editHeading, .searchHeading {
 	  font-size: 90px;
 	}
 	.tagline {
@@ -82,12 +84,12 @@ button {
   }
   
   @media only screen and (min-device-width: 1367px) and (max-device-width: 2000px) {
-	.myKitchenHero, .postRecipeHero, .welcomeHero, .myRecipesPageHero, .editRecipeHero   {
+	.myKitchenHero, .postRecipeHero, .welcomeHero, .myRecipesPageHero, .editRecipeHero, .searchPageHero   {
 	  min-width: 1367px;
 	  max-width: 2000px;
 	  min-height: 500px;
 	}
-	.myKitchenHeader, .postHeading, .welcomeHeader, .myRecipesHeading, .editHeading {
+	.myKitchenHeader, .postHeading, .welcomeHeader, .myRecipesHeading, .editHeading, .searchHeading {
 	  font-size: 120px;
 	}
 	.tagline {
