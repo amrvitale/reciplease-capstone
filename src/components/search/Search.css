@@ -1,0 +1,55 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  #draftlingSearchResultContainer {
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.single-recipe {
+    margin: 1px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: white;
+    justify-content: space-evenly;
+}
+
+#recipeSearchResultContainer .single-recipe {
+    padding: 3px;
+    display: flex;
+   
+}
+
+div.single-recipe {
+    margin: 30px;
+    justify-self: center;
+    height: 150px;
+    width: 320px;
+    box-shadow: 3px 3px 5px 6px #ccc;
+}
+.searchPageHero {
+    background-image: url(./searchRecipe.jpg);
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.searchHeading {
+    -webkit-text-fill-color: rgb(37, 26, 26);    
+    font-family: 'Playfair Display', 'Georgia', serif;
+ 
+      
+}
+
+.recipeNameSearch, .ingredientsSearch {
+    font-size: 30px;
+    color: whitesmoke;
+}
+
+input, select {
+    width: 100px;
+}

@@ -7,7 +7,6 @@ import Nav from './components/nav/Nav';
 import Kitchen from './components/kitchen/Kitchen';
 import Search from './components/search/Search'
 import MyRecipes from './components/myrecipes/MyRecipes'
-import SearchResults from './components/searchresults/SearchResults'
 import EditRecipe from './components/editrecipe/EditRecipe';
 import RecipePage from './components/recipepage/RecipePage';
 import ApiContext from './ApiContext'
@@ -98,7 +97,6 @@ class App extends React.Component {
         <Route path= '/mykitchen' component={Kitchen} />
         <Route path= '/postrecipe' component={PostRecipe} />
         <Route path= '/search' component={Search} />
-        <Route path='/results' component={SearchResults} />
 
         <Route 
           path= '/myrecipes' 

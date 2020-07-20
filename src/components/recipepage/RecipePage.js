@@ -78,7 +78,7 @@ class RecipePage extends React.Component {
         return (
             <div className="recipePage">
                 <div className="recipeActions">
-                    <Link to={`/editerecipe/${slug}`}><button type="button">Edit</button></Link>
+                    <Link to={`/editrecipe/${slug}`}><button type="button">Edit</button></Link>
                     {statusButton}
                 </div>
 
