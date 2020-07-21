@@ -18,6 +18,8 @@ p {
 .recipePage{
     background-image: url('./plate2.jpg');
     display: block;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 p, label {
