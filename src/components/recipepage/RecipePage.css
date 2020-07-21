@@ -1,4 +1,8 @@
-.recipeName {
+* {
+    box-sizing: border-box;
+  }
+  .recipeName {
+      
     color: maroon;
     font-size: 80px;
     text-transform: uppercase;

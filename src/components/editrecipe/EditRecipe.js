@@ -95,7 +95,7 @@ class EditRecipe extends React.Component {
             <form onSubmit={this.handleSubmit}>
                 <section className="recipeIntro">
                     <label htmlFor="recipename">Recipe Name:</label>
-                    <input value ={this.state.recipename} type="text" name="recipename" onChange={this.handleChange} required></input>
+                    <input value ={this.state.recipename} type="text" name="recipename" onChange={this.handleChange} maxLength={30} required></input>
                     <br />
 
                     <textarea value ={this.state.experience} className="experience" name="experience" onChange={this.handleChange} style={styleTextArea} placeholder="Tell us about your experience making this recipe. Was it difficult? Was it fun? Did you try any new techniques or ingredients not normally associated with this cuisine?"></textarea>
