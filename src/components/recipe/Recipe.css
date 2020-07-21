@@ -19,8 +19,9 @@ a {
    color: darkgray;
   
    display:inline-block;
+   text-overflow: ellipsis;
    white-space: pre-wrap;
-   width: 150px;
+   width: 8em;
    -webkit-line-clamp: 2; /* number of lines to show */
    -webkit-box-orient: vertical;
   }
