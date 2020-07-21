@@ -86,33 +86,34 @@ class App extends React.Component {
         addRecipe: this.addRecipe,
         recipes: this.state.recipes,
         handlePublishRecipe: this.handlePublishRecipe,
-        editRecipe: this.editRecipe
+        editRecipe: this.editRecipe,
+        fetchRecipes: this.fetchRecipes
       }
 
     return (
       <ApiContext.Provider value={providerValue}>
         <div className="App">
-        <Nav />
-        <Route exact path = '/' component={Welcome}/>
-        <Route path= '/mykitchen' component={Kitchen} />
-        <Route path= '/postrecipe' component={PostRecipe} />
-        <Route path= '/search' component={Search} />
+          <Nav />
+          <Route exact path = '/' component={Welcome}/>
+          <Route path= '/mykitchen' component={Kitchen} />
+          <Route path= '/postrecipe' component={PostRecipe} />
+          <Route path= '/search' component={Search} />
 
-        <Route 
-          path= '/myrecipes' 
-          render={(props) => <MyRecipes {...props} recipes={this.state.recipes} />} 
-        />
+          <Route 
+            path= '/myrecipes' 
+            render={(props) => <MyRecipes {...props} recipes={this.state.recipes} />} 
+          />
 
-        <Route 
-          path= '/recipe/:slug' 
-          render={(props) => <RecipePage {...props} recipes={this.state.recipes} handlePublishRecipe={this.handlePublishRecipe} />} 
-        />  
-        
-        
-        <Route 
-          path='/editrecipe/:id' 
-          render={(props) => <EditRecipe {...props} fetchRecipes={this.fetchRecipes} />}
-        />
+          <Route 
+            path= '/recipe/:slug' 
+            render={(props) => <RecipePage {...props} recipes={this.state.recipes} handlePublishRecipe={this.handlePublishRecipe} />} 
+          />  
+          
+          
+          <Route 
+            path='/editrecipe/:id' 
+            render={(props) => <EditRecipe {...props} fetchRecipes={this.fetchRecipes} />}
+          />
 
         </div>
       </ApiContext.Provider>

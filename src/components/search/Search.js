@@ -62,6 +62,7 @@ class Search extends React.Component {
     }
 
     render() {
+      
         return (
             <div className="searchPage">
                 <div className="searchPageHero">
@@ -95,7 +96,7 @@ class Search extends React.Component {
                 <br />
                 <br />
                 <br />
-                {this.state.recipes.length > 0 && (
+                 {this.state.recipes.length > 0 && (
                     <div id="recipeSearchResultContainer">
                         {this.state.recipes.map((recipe, index) => (
                             <div className="single-recipe" key={index}>
