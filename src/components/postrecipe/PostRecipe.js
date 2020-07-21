@@ -64,7 +64,7 @@ class PostRecipe extends React.Component {
     render() {
         const styleTextArea = {
             minHeight: '150px',
-            minWidth: '380px',
+            minWidth: '300px',
             padding: '9px',
             boxSizing: 'border-box',
             fontSize: '15px',

@@ -39,13 +39,13 @@ button {
   }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-	.myKitchenHero, .postRecipeHero, .welcomeHero, .myRecipesPageHero, .editRecipeHero  {
+	.myKitchenHero, .postRecipeHero, .welcomeHero, .myRecipesPageHero, .editRecipeHero, .searchPageHero  {
 	  min-width: 320px;
 	  max-width: 480px;
 	  min-height: 300px;
 	}
-	.myKitchenHeader, .postHeading, .welcomeHeader, .myRecipesHeading, .editHeading {
-	  font-size: 50px;
+	.myKitchenHeader, .postHeading, .welcomeHeader, .myRecipesHeading, .editHeading, .searchHeading {
+	  font-size: 30px;
 	}
 	.tagline {
 	  font-size: 20px;
@@ -60,12 +60,17 @@ button {
 	  min-width: 481px;
 	  max-width: 768px;
 	  min-height: 350px;
+	  width: auto;
 	}
 	.myKitchenHeader, .postHeading, .welcomeHeader, .myRecipesHeading, .editHeading, .searchHeading {
 	  font-size: 60px;
 	}
 	.tagline {
 	  font-size: 28px;
+	}
+
+	text-area {
+		width: 300px;
 	}
   }
   
