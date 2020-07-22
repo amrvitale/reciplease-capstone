@@ -46,7 +46,7 @@ button {
 	  min-height: 300px;
 	}
 	.myKitchenHeader, .postHeading, .welcomeHeader, .myRecipesHeading, .editHeading, .searchHeading {
-	  font-size: 30px;
+	  font-size: 50px;
 	}
 	.tagline {
 	  font-size: 20px;
@@ -68,7 +68,6 @@ button {
 	  min-width: 481px;
 	  max-width: 768px;
 	  min-height: 350px;
-	  width: auto;
 	}
 	.myKitchenHeader, .postHeading, .welcomeHeader, .myRecipesHeading, .editHeading, .searchHeading {
 	  font-size: 60px;
