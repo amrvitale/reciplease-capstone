@@ -84,12 +84,13 @@ class Search extends React.Component {
                 <br />
                 
                 <section className="ingredientsSearch">
-                    <label htmlFor="ingredients">Ingredients</label>
+                    <label htmlFor="ingredients">Ingredients
                     <input className="ingredients"
                         type="text"
                         onChange={event => this.handleIngredientsChange(event)}
                         value={this.state.ingredientsValue}>
                     </input>
+                    </label>
                     <p className="searchHelp">Search by ingredients, i.e. 'flour'</p>
                 </section>
                 <br />
