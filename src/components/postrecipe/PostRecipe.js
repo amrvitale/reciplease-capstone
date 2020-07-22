@@ -78,37 +78,44 @@ class PostRecipe extends React.Component {
                 </div>
                 <form onSubmit={this.handleSubmit}>
                     <section className="recipeIntro">
-                        <label htmlFor="recipename">Recipe Name:</label>
-                        <input type="text" name="recipename" onChange={this.handleChange} maxLength={30} required></input>
+                        <label htmlFor="recipename">Recipe Name:
+                            <input type="text" name="recipename" onChange={this.handleChange} maxLength={30} required></input>
+                        </label>
                         <br />
 
-                        <label htmlFor="experience">Experience:</label>
-                        <textarea className="experience" name="experience" onChange={this.handleChange} style={styleTextArea} placeholder="Tell us about your experience making this recipe. Was it difficult? Was it fun? Did you try any new techniques or ingredients not normally associated with this cuisine?"></textarea>
+                        <label htmlFor="experience">Experience:
+                            <textarea className="experience" name="experience" onChange={this.handleChange} style={styleTextArea} placeholder="Tell us about your experience making this recipe. Was it difficult? Was it fun? Did you try any new techniques or ingredients not normally associated with this cuisine?"></textarea>
+                        </label>
                         <br />
 
-                        <label htmlFor="prepTime">Prep Time:</label>
+                        <label htmlFor="prepTime">Prep Time:
                         <input type="text" name="preptime" onChange={this.handleChange} required></input>
+                        </label>
                         <br />
 
-                        <label htmlFor="cookTime">Cook Time:</label>
-                        <input type="text" name="cooktime" onChange={this.handleChange} required></input>
+                        <label htmlFor="cookTime">Cook Time:
+                            <input type="text" name="cooktime" onChange={this.handleChange} required></input>
+                        </label>
                         <br />
 
-                        <label htmlFor="servings">Servings:</label>
-                        <input type="text" name="servings" onChange={this.handleChange} required></input> 
+                        <label htmlFor="servings">Servings:
+                            <input type="text" name="servings" onChange={this.handleChange} required></input> 
+                        </label>
                         <br />
                         
                     </section>
 
                     <section className="ingredientsList">
-                        <h2>Ingredients</h2>
+                        <label htmlFor="ingredients">Ingredients
                         <textarea className="ingredients" name="ingredients" onChange={this.handleChange}  style={styleTextArea} placeholder="Please add each ingredient on a separate line." required></textarea>
+                        </label>
                     </section>
 
                     <section className="directions">
-                        <h2>Directions</h2>
+                        <label htmlFor="directions">Directions
                         <textarea className="directions" name="directions" onChange={this.handleChange} style={styleTextArea} placeholder="Please add each step on a separate line." required></textarea>
-                    </section>
+                        </label>
+                        </section>
 
                     <input type="submit" className="submitBtn" value="Submit"></input>
                 </form>

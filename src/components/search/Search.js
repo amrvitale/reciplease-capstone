@@ -71,13 +71,14 @@ class Search extends React.Component {
                 <br />
                 <br />
                 <section className="recipeNameSearch">
-                    <label htmlFor="recipeName">Recipe Name </label>
+                    <label htmlFor="recipeName">Recipe Name 
                     <input className="recipename"
                         type="text" 
                         onChange={event => this.handleRecipenameChange(event)} 
                         value={this.state.recipenameValue}>
-                        
                     </input>
+                    </label>
+                    
                     <p className="searchHelp">Search by recipe name, i.e. 'crepes'</p>
                 </section>
                 <br />
