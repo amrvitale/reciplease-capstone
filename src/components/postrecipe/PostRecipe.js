@@ -84,6 +84,7 @@ class PostRecipe extends React.Component {
                         <br />
 
                         <label htmlFor="experience">Experience:
+                        <br />
                             <textarea className="experience" name="experience" onChange={this.handleChange} style={styleTextArea} placeholder="Tell us about your experience making this recipe. Was it difficult? Was it fun? Did you try any new techniques or ingredients not normally associated with this cuisine?"></textarea>
                         </label>
                         <br />
@@ -107,12 +108,14 @@ class PostRecipe extends React.Component {
 
                     <section className="ingredientsList">
                         <label htmlFor="ingredients">Ingredients
+                        <br />
                         <textarea className="ingredients" name="ingredients" onChange={this.handleChange}  style={styleTextArea} placeholder="Please add each ingredient on a separate line." required></textarea>
                         </label>
                     </section>
 
                     <section className="directions">
                         <label htmlFor="directions">Directions
+                        <br />
                         <textarea className="directions" name="directions" onChange={this.handleChange} style={styleTextArea} placeholder="Please add each step on a separate line." required></textarea>
                         </label>
                         </section>
