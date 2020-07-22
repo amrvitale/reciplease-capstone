@@ -10,7 +10,7 @@ h1, h2 {
 }
 
 body {
-  background-color: rgb(187, 210, 216);
+  background-color: rgb(73, 96, 102);
   text-align: center;
 }
 
@@ -28,6 +28,7 @@ button {
 	background-color: rgb(88, 26, 26);
 	color: whitesmoke;
   }
+
   input, label, select {
     margin: 5px;
     
@@ -50,8 +51,15 @@ button {
 	.tagline {
 	  font-size: 20px;
 	}
+	.welcomeTag {
+		font-size: 15px;
+	}
 	.submitBtn {
 		width: 40%;
+	  }
+
+	  input, select {
+		width: 50%;
 	  }
   }
   
@@ -72,6 +80,9 @@ button {
 	text-area {
 		width: 300px;
 	}
+	 input, select {
+    width: 50%;
+  }
   }
   
   @media only screen and (min-device-width: 769px) and (max-device-width: 1366px)  {  
@@ -86,6 +97,9 @@ button {
 	.tagline {
 	  font-size: 30px;
 	}
+	input, select {
+		width: 80%;
+	  }
   }
   
   @media only screen and (min-device-width: 1367px) and (max-device-width: 2000px) {

@@ -82,6 +82,7 @@ class PostRecipe extends React.Component {
                         <input type="text" name="recipename" onChange={this.handleChange} maxLength={30} required></input>
                         <br />
 
+                        <label htmlFor="experience">Experience:</label>
                         <textarea className="experience" name="experience" onChange={this.handleChange} style={styleTextArea} placeholder="Tell us about your experience making this recipe. Was it difficult? Was it fun? Did you try any new techniques or ingredients not normally associated with this cuisine?"></textarea>
                         <br />
 

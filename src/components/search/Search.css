@@ -23,7 +23,6 @@
     padding: 3px;
     display: flex;
     border: 1px #2B2D42;  
-   
 }
 
 div.single-recipe {
@@ -49,9 +48,7 @@ div.single-recipe {
     -1px -1px 0 #000,  
      1px -1px 0 #000,
      -1px 1px 0 #000,
-      1px 1px 0 #000;
- 
-      
+      1px 1px 0 #000;   
 }
 
 .recipeNameSearch, .ingredientsSearch {
