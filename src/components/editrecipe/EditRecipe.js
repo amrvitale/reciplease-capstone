@@ -95,27 +95,27 @@ class EditRecipe extends React.Component {
             <form onSubmit={this.handleSubmit}>
                 <section className="recipeIntro">
                     <label htmlFor="recipename">Recipe Name:
-                        <input value ={this.state.recipename} type="text" name="recipename" onChange={this.handleChange} maxLength={30} required></input>
+                        <input value ={this.state.recipename} type="text" name="recipename" id="recipename" onChange={this.handleChange} maxLength={30} required></input>
                     </label>
                     <br />
 
                      <label htmlFor="experience">Experience:  
-                        <textarea value ={this.state.experience} className="experience" name="experience" onChange={this.handleChange} style={styleTextArea} placeholder="Tell us about your experience making this recipe. Was it difficult? Was it fun? Did you try any new techniques or ingredients not normally associated with this cuisine?"></textarea>
+                        <textarea value ={this.state.experience} className="experience" name="experience" id="experience" onChange={this.handleChange} style={styleTextArea} placeholder="Tell us about your experience making this recipe. Was it difficult? Was it fun? Did you try any new techniques or ingredients not normally associated with this cuisine?"></textarea>
                     </label> 
                     <br />
 
-                    <label htmlFor="prepTime">Prep Time:
-                        <input value ={this.state.preptime} type="text" name="preptime" onChange={this.handleChange} required></input>
+                    <label htmlFor="preptime">Prep Time:
+                        <input value ={this.state.preptime} type="text" name="preptime" id="preptime" onChange={this.handleChange} required></input>
                     </label>
                     <br />
 
-                    <label htmlFor="cookTime">Cook Time:
-                        <input value ={this.state.cooktime} type="text" name="cooktime" onChange={this.handleChange} required></input>
+                    <label htmlFor="cooktime">Cook Time:
+                        <input value ={this.state.cooktime} type="text" name="cooktime" id="cooktime" onChange={this.handleChange} required></input>
                     </label>
                     <br />
 
                     <label htmlFor="servings">Servings:
-                        <input value ={this.state.servings}  type="text" name="servings" onChange={this.handleChange} required></input> 
+                        <input value ={this.state.servings}  type="text" name="servings" id="servings" onChange={this.handleChange} required></input> 
                     </label>
                     <br />
                     
@@ -123,13 +123,13 @@ class EditRecipe extends React.Component {
 
                 <section className="ingredientsList">
                     <label htmlFor="ingredients">Ingredients
-                        <textarea value ={this.state.ingredients} className="ingredients" name="ingredients" onChange={this.handleChange}  style={styleTextArea} placeholder="Please add each ingredient on a separate line." required></textarea>
+                        <textarea value ={this.state.ingredients} className="ingredients" name="ingredients" id="ingredients" onChange={this.handleChange}  style={styleTextArea} placeholder="Please add each ingredient on a separate line." required></textarea>
                     </label>
                 </section>
 
                 <section className="directions">
                     <label htmlFor="directions">Directions
-                        <textarea value ={this.state.directions} className="directions" name="directions" onChange={this.handleChange} style={styleTextArea} placeholder="Please add each step on a separate line." required></textarea>
+                        <textarea value ={this.state.directions} className="directions" name="directions" id="ingredients" onChange={this.handleChange} style={styleTextArea} placeholder="Please add each step on a separate line." required></textarea>
                     </label>
                 </section>
 

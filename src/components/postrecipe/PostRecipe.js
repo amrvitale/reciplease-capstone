@@ -116,7 +116,7 @@ class PostRecipe extends React.Component {
                     <section className="directions">
                         <label htmlFor="directions">Directions
                         <br />
-                        <textarea className="directions" name="directions" id="ingredients" onChange={this.handleChange} style={styleTextArea} placeholder="Please add each step on a separate line." required></textarea>
+                        <textarea className="directions" name="directions" id="directions" onChange={this.handleChange} style={styleTextArea} placeholder="Please add each step on a separate line." required></textarea>
                         </label>
                         </section>
 
