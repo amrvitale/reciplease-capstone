@@ -19,7 +19,7 @@ ul {
 	text-decoration: none;
   }
   
-  li {
+li {
 	list-style-type: none;
   }
 
@@ -34,42 +34,37 @@ button {
 	border-radius: 5px;
   }
 
-  button:hover {
+button:hover {
 	background-color: rgb(88, 26, 26);
 	color: whitesmoke;
   }
 
-  input, label, select {
+input, label, select {
     margin: 5px;
-    
   }
-  input, select {
-    width: 15%;
+
+input, select {
+	width: 15%;
     height: 30px;
     font-size: 20px;
   }
 
-	.myKitchenHero, .postRecipeHero, .welcomeHero, .myRecipesPageHero, .editRecipeHero, .searchPageHero  {
-	  width: 100%;
-	  height: auto;
-	}
-	.myKitchenHeader, .postHeading, .welcomeHeader, .myRecipesHeading, .editHeading, .searchHeading {
-	  font-size: 50px;
-	}
-	.tagline {
-	  font-size: 20px;
-	}
+.myKitchenHero, .postRecipeHero, .welcomeHero, .myRecipesPageHero, .editRecipeHero, .searchPageHero  {
+	width: 100%;
+	height: auto;
+}
+.myKitchenHeader, .postHeading, .welcomeHeader, .myRecipesHeading, .editHeading, .searchHeading {
+	font-size: 50px;
+}
+.tagline {
+	font-size: 20px;
+}
 	
-	.submitBtn {
-		width: 40%;
-	  }
+.submitBtn {
+	width: 40%;
+}
 
-	  input, select {
-		width: 50%;
-		line-height: 2em;
-		font-size: 18px;
-	  }
-  
+
   /*iPad size*/
   @media only screen and (min-device-width: 769px) and (max-device-width: 1366px)  {  
 	.myKitchenHero, .postRecipeHero, .welcomeHero, .myRecipesPageHero, .editRecipeHero, .searchPageHero  {
