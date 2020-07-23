@@ -1,7 +1,9 @@
-import React from 'react'
-import './PostRecipe.css'
+import React from 'react';
+import './PostRecipe.css';
 import ApiContext from '../../ApiContext';
-import config from '../../config'
+import config from '../../config';
+
+/* This component renders the Post Recipe page, found by clicking My Kitchen > Post New Recipe. */
 
 class PostRecipe extends React.Component {
 
@@ -23,7 +25,6 @@ class PostRecipe extends React.Component {
 
     handleChange = e => {
         this.setState({[e.target.getAttribute('name')]: e.target.value})
-
     }
 
     
@@ -61,6 +62,7 @@ class PostRecipe extends React.Component {
         
         })
     }
+
     render() {
         const styleTextArea = {
             minHeight: '150px',
@@ -109,14 +111,14 @@ class PostRecipe extends React.Component {
                     <section className="ingredientsList">
                         <label htmlFor="ingredients">Ingredients
                         <br />
-                        <textarea className="ingredients" id="ingredients" name="ingredients" onChange={this.handleChange}  style={styleTextArea} placeholder="Please add each ingredient on a separate line." required></textarea>
+                            <textarea className="ingredients" id="ingredients" name="ingredients" onChange={this.handleChange}  style={styleTextArea} placeholder="Please add each ingredient on a separate line." required></textarea>
                         </label>
                     </section>
 
                     <section className="directions">
                         <label htmlFor="directions">Directions
                         <br />
-                        <textarea className="directions" name="directions" id="directions" onChange={this.handleChange} style={styleTextArea} placeholder="Please add each step on a separate line." required></textarea>
+                            <textarea className="directions" name="directions" id="directions" onChange={this.handleChange} style={styleTextArea} placeholder="Please add each step on a separate line." required></textarea>
                         </label>
                         </section>
 

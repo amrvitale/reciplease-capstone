@@ -1,0 +1,167 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`EditRecipe component renders a .EditRecipe by default 1`] = `
+<div
+  className="editRecipePage"
+>
+  <div
+    className="editRecipeHero"
+  >
+    <h1
+      className="editHeading"
+    >
+      Edit Your Recipe
+    </h1>
+  </div>
+  <form
+    onSubmit={[Function]}
+  >
+    <section
+      className="recipeIntro"
+    >
+      <label
+        htmlFor="recipename"
+      >
+        Recipe Name:
+        <input
+          id="recipename"
+          maxLength={30}
+          name="recipename"
+          onChange={[Function]}
+          required={true}
+          type="text"
+          value=""
+        />
+      </label>
+      <br />
+      <label
+        htmlFor="experience"
+      >
+        Experience:
+        <textarea
+          className="experience"
+          id="experience"
+          name="experience"
+          onChange={[Function]}
+          placeholder="Tell us about your experience making this recipe. Was it difficult? Was it fun? Did you try any new techniques or ingredients not normally associated with this cuisine?"
+          style={
+            Object {
+              "boxSizing": "border-box",
+              "fontSize": "15px",
+              "minHeight": "380px",
+              "minWidth": "380px",
+              "padding": "9px",
+              "textAlign": "left",
+            }
+          }
+          value=""
+        />
+      </label>
+      <br />
+      <label
+        htmlFor="preptime"
+      >
+        Prep Time:
+        <input
+          id="preptime"
+          name="preptime"
+          onChange={[Function]}
+          required={true}
+          type="text"
+          value=""
+        />
+      </label>
+      <br />
+      <label
+        htmlFor="cooktime"
+      >
+        Cook Time:
+        <input
+          id="cooktime"
+          name="cooktime"
+          onChange={[Function]}
+          required={true}
+          type="text"
+          value=""
+        />
+      </label>
+      <br />
+      <label
+        htmlFor="servings"
+      >
+        Servings:
+        <input
+          id="servings"
+          name="servings"
+          onChange={[Function]}
+          required={true}
+          type="text"
+          value=""
+        />
+      </label>
+      <br />
+    </section>
+    <section
+      className="ingredientsList"
+    >
+      <label
+        htmlFor="ingredients"
+      >
+        Ingredients
+        <textarea
+          className="ingredients"
+          id="ingredients"
+          name="ingredients"
+          onChange={[Function]}
+          placeholder="Please add each ingredient on a separate line."
+          required={true}
+          style={
+            Object {
+              "boxSizing": "border-box",
+              "fontSize": "15px",
+              "minHeight": "380px",
+              "minWidth": "380px",
+              "padding": "9px",
+              "textAlign": "left",
+            }
+          }
+          value=""
+        />
+      </label>
+    </section>
+    <section
+      className="directions"
+    >
+      <label
+        htmlFor="directions"
+      >
+        Directions
+        <textarea
+          className="directions"
+          id="ingredients"
+          name="directions"
+          onChange={[Function]}
+          placeholder="Please add each step on a separate line."
+          required={true}
+          style={
+            Object {
+              "boxSizing": "border-box",
+              "fontSize": "15px",
+              "minHeight": "380px",
+              "minWidth": "380px",
+              "padding": "9px",
+              "textAlign": "left",
+            }
+          }
+          value=""
+        />
+      </label>
+    </section>
+    <input
+      className="submitBtn"
+      type="submit"
+      value="Submit"
+    />
+  </form>
+</div>
+`;

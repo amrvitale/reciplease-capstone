@@ -1,8 +1,10 @@
-import React from 'react'
-import ApiContext from '../../ApiContext'
-import config from '../../config'
-import {Link} from 'react-router-dom'
-import './RecipePage.css'
+import React from 'react';
+import ApiContext from '../../ApiContext';
+import config from '../../config';
+import {Link} from 'react-router-dom';
+import './RecipePage.css';
+
+/* This component renders the page for a selected Recipe. Users can edit and publish a recipe on this page. */
 
 class RecipePage extends React.Component {
     static defaultProps = {
@@ -10,8 +12,6 @@ class RecipePage extends React.Component {
             params: {}
         }
     }
-
-    
 
     static contextType = ApiContext
 

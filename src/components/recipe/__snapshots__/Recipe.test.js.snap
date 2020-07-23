@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Recipe component renders a .Recipe by default 1`] = `
+<div
+  className="recipeCard"
+>
+  <Link
+    to="/recipe/undefined"
+  >
+    <div
+      className="card-header"
+    >
+      <div
+        className="card-title"
+      >
+        <h2
+          className="recipeTitle"
+        />
+      </div>
+    </div>
+  </Link>
+</div>
+`;

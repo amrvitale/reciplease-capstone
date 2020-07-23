@@ -1,0 +1,75 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Search component renders a .Search by default 1`] = `
+<div
+  className="searchPage"
+>
+  <div
+    className="searchPageHero"
+  >
+    <h1
+      className="searchHeading"
+    >
+      Search Recipes
+    </h1>
+  </div>
+  <br />
+  <br />
+  <section
+    className="recipeNameSearch"
+  >
+    <label
+      htmlFor="recipename"
+    >
+      Recipe Name
+      <input
+        className="recipename"
+        id="recipename"
+        onChange={[Function]}
+        type="text"
+        value=""
+      />
+    </label>
+    <p
+      className="searchHelp"
+    >
+      Search by recipe name, i.e. 'crepes'
+    </p>
+  </section>
+  <br />
+  <br />
+  <section
+    className="ingredientsSearch"
+  >
+    <label
+      htmlFor="ingredients"
+    >
+      Ingredients
+      <input
+        className="ingredients"
+        id="ingredients"
+        onChange={[Function]}
+        type="text"
+        value=""
+      />
+    </label>
+    <p
+      className="searchHelp"
+    >
+      Search by ingredients, i.e. 'flour'
+    </p>
+  </section>
+  <br />
+  <br />
+  <button
+    onClick={[Function]}
+    type="submit"
+  >
+    Search
+  </button>
+  <br />
+  <br />
+  <br />
+  <br />
+</div>
+`;
