@@ -20,7 +20,7 @@ p {
 	text-align: center;
 	display: inline-block;
   }
-  
+
 button {
 	cursor: pointer;
 	background: black;
@@ -56,9 +56,7 @@ button {
 	.tagline {
 	  font-size: 20px;
 	}
-	.welcomeTag {
-		font-size: 15px;
-	}
+	
 	.submitBtn {
 		width: 40%;
 	  }
