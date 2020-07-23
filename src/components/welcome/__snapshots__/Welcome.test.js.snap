@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Welcome component renders a .Welcome by default 1`] = `
+<div
+  className="welcomePage"
+>
+  <div
+    className="welcomeHero"
+  >
+    <h1
+      className="welcomeHeader"
+    >
+      Welcome to Reciplease
+    </h1>
+  </div>
+  <section
+    className="about"
+  >
+    <h2>
+      About Reciplease
+    </h2>
+    <h2
+      className="welcomeTag"
+    >
+      We're a Community of Home Cooks and Recipe Lovers
+    </h2>
+    <p>
+      Reciplease is a public recipebox. 
+      <br />
+       Break out your favorite, timeless recipes and share with friends and family!
+    </p>
+  </section>
+</div>
+`;

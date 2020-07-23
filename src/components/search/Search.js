@@ -1,7 +1,9 @@
-import React from 'react'
-import config from '../../config'
-import Recipe from '../recipe/Recipe'
-import './Search.css'
+import React from 'react';
+import config from '../../config';
+import Recipe from '../recipe/Recipe';
+import './Search.css';
+
+/* This component renders the search page. Only published recipes will appear in search results. */
 
 class Search extends React.Component {
 
@@ -56,6 +58,7 @@ class Search extends React.Component {
             this.setState( {recipes: recipe, noResults: recipe.length === 0,})
             console.log({recipes: recipe})
         })
+
         .catch(error => {
             console.log({error})
         })
@@ -79,7 +82,6 @@ class Search extends React.Component {
                         value={this.state.recipenameValue}>
                     </input>
                     </label>
-
                     <p className="searchHelp">Search by recipe name, i.e. 'crepes'</p>
                 </section>
                 <br />

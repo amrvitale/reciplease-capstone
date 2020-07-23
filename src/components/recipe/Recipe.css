@@ -25,7 +25,7 @@
   border: 1px #2B2D42;  
 }
 
-li.card{
+li.card {
   margin: 30px;
   justify-self: center;
   height: 250px;
@@ -34,15 +34,15 @@ li.card{
 }
  
 
- .recipeTitle{
+ .recipeTitle {
    color: rgb(19, 16, 16);
-  padding: 6px;
-  margin: 8px;
+   padding: 6px;
+   margin: 8px;
    display:inline-block;
    white-space: pre-wrap;
    overflow: hidden;
    width: 8em;
    -webkit-line-clamp: 2; /* number of lines to show */
    -webkit-box-orient: vertical;
-  }
+}
   

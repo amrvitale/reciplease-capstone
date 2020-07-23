@@ -6,6 +6,6 @@ import EditRecipe from './EditRecipe'
 describe (`EditRecipe component`, () => {
     it ('renders a .EditRecipe by default', () => {
         const wrapper = shallow( <EditRecipe />)
-        expect (toJson(wrapper)).toMatchSnapshot()
+        expect(toJson(wrapper)).toMatchSnapshot()
     })
 });

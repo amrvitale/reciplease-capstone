@@ -6,6 +6,6 @@ import RecipePage from './RecipePage'
 describe (`RecipePage component`, () => {
     it ('renders a .RecipePage by default', () => {
         const wrapper = shallow( <RecipePage />)
-        expect (toJson(wrapper)).toMatchSnapshot()
+        expect(toJson(wrapper)).toMatchSnapshot()
     })
 });

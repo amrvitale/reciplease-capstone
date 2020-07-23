@@ -1,25 +1,25 @@
 * {
     box-sizing: border-box;
-  }
+}
 
-  .container {
+.container {
     display: flex;
     flex-direction: row;
     flex-flow: row wrap;
     align-items: center;
     justify-content: space-around;
-  }
+}
 
-  .card { 
+.card { 
     margin: 1px;
     padding: 5px;
     border: 1px solid #2B2D42;
     border-radius: 5px;
     background-color: rgb(255, 213, 136);
     justify-content: space-evenly;
-  }
+}
 
-  .container .card {
+.container .card {
     padding: 3px;
     display: flex;
     border: 1px #2B2D42;  
@@ -37,11 +37,11 @@ li.card{
     font-family: 'Amaranth', sans-serif;;
     color: white;
     text-shadow:
-    4px 4px 0 black,
-    -1px -1px 0 #000,  
-    1px -1px 0 #000,
-    -1px 1px 0 #000,
-    1px 1px 0 #000;
+      4px 4px 0 black,
+      -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+      1px 1px 0 #000;
 }
 
 .myRecipesPageHero{

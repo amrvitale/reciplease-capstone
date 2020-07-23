@@ -1,7 +1,9 @@
-import React from 'react'
-import './Welcome.css'
+import React from 'react';
+import './Welcome.css';
 
-class Signup extends React.Component {
+/* This component renders a basic welcome page (no functionality).*/
+
+class Welcome extends React.Component {
     render () {
        
         return (
@@ -20,4 +22,4 @@ class Signup extends React.Component {
         );
     }
 }
-export default Signup;
+export default Welcome;

@@ -6,7 +6,7 @@ import './EditRecipe.css';
 /* This component renders the Edit form for a selected recipe. All data is available for editing upon clicking Edit. */
 
 class EditRecipe extends React.Component {
-    componentDidMount(){
+    componentDidMount() {
         const {recipes = []} = this.context;
         const {id} = this.props.match.params;
 
@@ -119,7 +119,6 @@ class EditRecipe extends React.Component {
                             <input value ={this.state.servings}  type="text" name="servings" id="servings" onChange={this.handleChange} required></input> 
                         </label>
                         <br />
-                        
                     </section>
 
                     <section className="ingredientsList">

@@ -6,6 +6,6 @@ import PostRecipe from './PostRecipe'
 describe (`PostRecipe component`, () => {
     it ('renders a .PostRecipe by default', () => {
         const wrapper = shallow( <PostRecipe />)
-        expect (toJson(wrapper)).toMatchSnapshot()
+        expect(toJson(wrapper)).toMatchSnapshot()
     })
 });

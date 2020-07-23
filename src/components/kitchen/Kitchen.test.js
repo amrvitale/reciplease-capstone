@@ -6,6 +6,6 @@ import Kitchen from './Kitchen'
 describe (`Kitchen component`, () => {
     it ('renders a .Kitchen by default', () => {
         const wrapper = shallow( <Kitchen />)
-        expect (toJson(wrapper)).toMatchSnapshot()
+        expect(toJson(wrapper)).toMatchSnapshot()
     })
 });

@@ -23,7 +23,9 @@ class RecipePage extends React.Component {
           
         if (selectedRecipe.status === 'published') {
           status = 'unpublished'
-        } else {
+        } 
+
+        else {
           status = 'published'
         }  
     
@@ -34,7 +36,7 @@ class RecipePage extends React.Component {
     
         let url = `${config.API_ENDPOINT}/myrecipes/${selectedRecipe.id}`; 
     
-          fetch(url, {
+        fetch(url, {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'
@@ -67,6 +69,7 @@ class RecipePage extends React.Component {
             let html = <p>Readying your recipe!</p>
             return html
         }
+        
         else if (selectedRecipe.status === "published") {
             statusButton = <button className="unpubButton" onClick= {() => this.updateRecipeStatus(selectedRecipe)}>Unpublish</button>
         }

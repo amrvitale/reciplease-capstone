@@ -4,6 +4,7 @@ import './Recipe.css';
 import ApiContext from '../../ApiContext';
 
 /* This component renders the Recipe card. It is called by the My Recipes and Search components. */
+
 export default class Recipe extends React.Component {
    
     static contextType = ApiContext

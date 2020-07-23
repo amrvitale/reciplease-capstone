@@ -105,7 +105,6 @@ class PostRecipe extends React.Component {
                             <input type="text" name="servings" id="servings" onChange={this.handleChange} required></input> 
                         </label>
                         <br />
-                        
                     </section>
 
                     <section className="ingredientsList">
