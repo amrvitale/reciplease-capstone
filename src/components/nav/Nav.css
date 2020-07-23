@@ -17,6 +17,8 @@
     border-bottom: 1px solid #edf2f4;; 
     border-top: 1px solid #edf2f4;;
     height: 60px;
+    white-space: nowrap;
+
 }
 
 #navbar li {
@@ -33,6 +35,8 @@
     text-decoration: none;
     color: whitesmoke;
     vertical-align: middle;
+    white-space: nowrap;
+
 }
 #navbar a:hover {
     background-color: #ddd;
