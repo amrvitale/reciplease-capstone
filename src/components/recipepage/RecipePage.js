@@ -86,13 +86,21 @@ class RecipePage extends React.Component {
                     <h1 className="recipeName">{(selectedRecipe) ? selectedRecipe.recipename: ""}</h1>
                     <br />
                     <p>Experience:</p>
+                    <br />
                     <p className="experience">{(selectedRecipe) ? selectedRecipe.experience: ""}</p>
+                    <br />
                     <p className="preptime">Prep time: {(selectedRecipe) ? selectedRecipe.preptime: ""}</p>
+                    <br />
                     <p className="cooktime">Cook time: {(selectedRecipe) ? selectedRecipe.cooktime: ""}</p>
+                    <br />
                     <p className="servings">Servings: {(selectedRecipe) ? selectedRecipe.servings: ""}</p>
+                    <br />
                     <p>Ingredients:</p>
+                    <br />
                     <p className="ingredients">{(selectedRecipe) ? selectedRecipe.ingredients: ""}</p>
+                    <br />
                     <p>Directions:</p>
+                    <br />
                     <p className="directions">{(selectedRecipe) ? selectedRecipe.directions: ""}</p>
                 </div>
             </div>
