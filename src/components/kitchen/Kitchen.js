@@ -11,6 +11,7 @@ class Kitchen extends React.Component {
                     </div>
                     <h2 className="start">Let's get cookin'!</h2>
                     <p>Welcome to your kitchen. <br />Here you can create a brand new recipe, or view your existing recipes to edit or publish to the Reciplease database.</p>
+                       <br />
                         <Link to='/postrecipe'>
                             <button type="submit">Post New Recipe</button>
                         </Link>
