@@ -2,23 +2,18 @@
 	box-sizing: border-box;
 	text-align: center;
 }
-	
-h1, h2 {
-  text-align: center;
-  margin: 0;
-  color: whitesmoke;
-
-}
 
 body {
-  background-color: rgb(73, 96, 102);
-  text-align: center;
+	background-color: rgb(73, 96, 102);
+	text-align: center;
+}
+  
+h1, h2 {
+  	text-align: center;
+  	margin: 0;
+  	color: whitesmoke;
 }
 
-p {
-	max-width: 80%;
-	text-align: center;
-  }
 
 button {
 	cursor: pointer;
@@ -30,6 +25,7 @@ button {
 	color: whitesmoke;
 	border-radius: 5px;
   }
+
   button:hover {
 	background-color: rgb(88, 26, 26);
 	color: whitesmoke;
